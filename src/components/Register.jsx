@@ -1,16 +1,28 @@
 import React from "react";
 import { useForm } from "react-hook-form";
 import { Link } from "react-router-dom";
+import axios from "axios";
 
 export default function Login() {
   const { register, handleSubmit, errors } = useForm();
 
   const onSubmit = (data) => {
     console.log(data);
+    axios
+      .post(`http://localhost:5000/register`, "hello?", {
+        mode: "no-cors",
+        headers: {
+          "Access-Control-Allow-Origin": "*",
+          "Content-Type": "text/plain",
+        },
+        withCredentials: true,
+        credentials: "same-origin",
+      })
+      .then((response) => console.log(response));
   };
 
   return (
-    <form className="container w-25" onSubmit={handleSubmit(onSubmit)}>
+    <form className="container col-lg-4" onSubmit={handleSubmit(onSubmit)}>
       <div className="form-group">
         <label htmlFor="email">Email address</label>
         <input type="email" className="form-control" id="email" name="email" placeholder="Enter email" ref={register({ required: "Email address required" })} />

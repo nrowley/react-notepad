@@ -3,7 +3,7 @@ import Topnav from "./components/Topnav";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Hello from "./components/Hello";
-import Login from "./components/Login";
+import Register from "./components/Register";
 
 function App() {
   return (
@@ -11,7 +11,7 @@ function App() {
       <div className="App">
         <Topnav />
         <Switch>
-          <Route path="/login" component={Login} />
+          <Route path="/register" component={Register} />
           <Route path="/" component={Hello} />
         </Switch>
       </div>
