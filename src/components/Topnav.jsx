@@ -14,11 +14,9 @@ export default class Topnav extends Component {
           </Link>
         </Navbar.Brand>
         <Nav className="mr-auto">
-          <Nav.Link>
-            <Link className="text-secondary flex-end text-decoration-none" to="/login">
-              Login
-            </Link>
-          </Nav.Link>
+          <Link className="text-secondary flex-end text-decoration-none" to="/login">
+            Login
+          </Link>
         </Nav>
       </Navbar>
     );
