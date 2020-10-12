@@ -8,7 +8,7 @@ export default class Topnav extends Component {
     return (
       <Navbar className="navbar navbar-expand-lg navbar-fixed-top navbar-dark bg-dark">
         <Navbar.Brand className="text-primary pink-hover lighten-2-hover">
-          <Link className="text-white text-decoration-none" to="#">
+          <Link className="text-white text-decoration-none" to="/">
             <VscRepo />
             Notepad
           </Link>
