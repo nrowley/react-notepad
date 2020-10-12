@@ -6,7 +6,7 @@ a notepad app in react, that allows you to collaborate in real time.
 
 ## Todos
 
-- ✅ Navbar with react-router
+- [x] Navbar with react-router
 - [ ] Login
 - [ ] Implement MongoDB server for users
 - [ ] Allow user to create notes
